@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/images/favicon.ico">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/pages/admindashboard.css">
+<title>Add a Listing</title>
+</head>
+<body>
+
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="/"><img src="/images/logo.png" width="250"></a>
+        </div>
+        <div class="nav_side">
+            <a href="/admin/logout">LOGOUT</a>
+        </div>
+    </nav>
+
+    
+    <div class="card-body">
+        <form action="/admin/insert" method="POST">
+         
+          <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="name" name="name">
+          </div>
+
+          <div class="form-group">
+            <label for="post">Location</label>
+            <input type="text" class="form-control" id="location" name="location">
+          </div>
+
+          <div class="form-group">
+            <label for="force">Price</label>
+            <input type="text" class="form-control" id="price" name="price">
+          </div>
+
+          <div class="form-group">
+            <label for="info">Description</label>
+            <input type="text" class="form-control" id="info" name="info">
+          </div>
+
+          <div class="form-group">
+            <label for="image">Images</label>
+            <input type="file" name="image" id="image" class="form-control" accept=".jpg, .jpeg, .png">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+      </div>
+
+        
+</body>
+</html>
+

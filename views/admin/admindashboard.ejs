@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/pages/admindashboard.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <title><%= title %></title>
+  </head>
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" width="250" /></a>
+      </div>
+      <div class="nav_side">
+        <a href="/admin/logout">LOGOUT</a>
+      </div>
+    </nav>
+
+    <div class="card text-center">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <a href="/admin/add" class="btn btn-success">Add a Listing</a>
+      </div>
+
+      <% if(locals.message) { %>
+
+      <h6 class="alert alert-danger mt-4"><%= message %></h6>
+
+      <% } %>
+
+      
+
+    <div class="container mx-auto mt-4">
+      <div class="row">
+        <% if(martyrData.length!=0){ var i=1; martyrData.forEach(function(data){
+        %>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            
+            <img
+              src="/images/hostel-dorm-bedroom-two.jpg"
+              class="card-img-top"
+              alt="..."
+              
+            />
+            <div class="card-body">
+              <h5 class="card-title"><%=data.name %></h5>
+              <h6 class="card-subtitle mb-2 text-muted">Location :</b> <%=data.location %></h6>
+              <p class="txt2"><b>Price :</b><%=data.price %></p>
+              <p class="card-text">
+                <%=data.info %>
+              </p>
+              <a href="/admin/edit/<%=data.id%>" class="button_green"
+                >Edit</a
+              >
+              <a href="/admin/delete/<%=data.id%>" class="button-5"
+                >Delete</a
+              >
+              
+            </div>
+            
+          </div>
+        </div>
+        <% i++; }) %> <% } else{ %>
+          <p>No Data Found</p>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
