@@ -46,11 +46,15 @@ With Apna Hostel, students can make informed decisions about their accommodation
 
 ## Preview
 
-
-Unity-Environment
-
-![Environment](https://github.com/chaitanya-chafale/Hand-Gesture-Gaming/blob/main/public/Unity%20Environment.gif)
-
+![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview1.png)
+![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview2.png)
+![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview3.png)
+![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview4.png)
+![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview5.png)
+![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview6.png)
+![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview7.png)
+![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview8.png)
+![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview9.png)
  
 ## Tools Used
 * Embedded JavaScript
