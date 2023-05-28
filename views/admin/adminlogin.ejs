@@ -16,8 +16,8 @@
         <div class="nav_side">
             <a href="/">HOME</a>
             <a href="/about">ABOUT US</a>
-            <a href="/donorlogin">SEARCH A HOSTEL</a>
-            <a href="/donorregister">REGISTER</a>
+            <a href="/customerlogin">SEARCH A HOSTEL</a>
+            <a href="/customerregister">REGISTER</a>
         </div>
     </nav>
 
@@ -42,7 +42,7 @@
 
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password">
+            <input type="password" pattern=".{8,}" class="form-control" id="password" name="password" placeholder="Minimum 8 characters.">
           </div>
           
           <button type="submit" class="btn btn-primary">Login</button>
@@ -50,7 +50,7 @@
       </div>
       <div class="card-header"> 
         Not Admin ? 
-        <a href="/donorlogin"><button class="btn btn-primary">Search hostel</button> </a>
+        <a href="/customerlogin"><button class="btn btn-primary">Search hostel</button> </a>
       </div>
     </div>
 

@@ -41,7 +41,7 @@ const db = mysql.createConnection({
   
   //Define Routes
 app.use('/', require('./routes/pages'));
-app.use('/donor', require('./routes/donor'));
+app.use('/customer', require('./routes/customer'));
 app.use('/admin', require('./routes/admin'));
 app.use('/payment', require('./routes/payment'));
 

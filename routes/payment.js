@@ -3,7 +3,7 @@ const mysql = require("mysql");
 
 const Razorpay = require('razorpay')
 const { nanoid } = require("nanoid");
-const donor_auth = require('../controllers/donor_auth');
+const customer_auth = require('../controllers/customer_auth');
 
 const db = mysql.createConnection({
 	host: process.env.DATABASE_HOST,
@@ -21,18 +21,18 @@ const router = express.Router();
 
 
 router.get('/:id', function (req, res, next) {
-	var MartyrId = req.params.id;
+	var ListingId = req.params.id;
 	// Render form for accepting amount
 	res.render('payment/order', {
-		title: 'Donate for Martyrs', MartyrId: MartyrId
+		title: 'Paymentfor listing', ListingId: ListingId
 	});
 });
 
-router.post('/order/:id', donor_auth.isLoggedIn, function (req, res, next) {
+router.post('/order/:id', customer_auth.isLoggedIn, function (req, res, next) {
 
-	var donorId = req.donor.id;
+	var customerId = req.customer.id;
 
-	var martyrId = req.params.id;
+	var listingId = req.params.id;
 
 	params = {
 		amount: req.body.amount * 100,
@@ -55,7 +55,7 @@ router.post('/order/:id', donor_auth.isLoggedIn, function (req, res, next) {
 			}
 
 			db.query('INSERT INTO donationdetails SET ?', {
-				donorId: donorId, martyrId: martyrId, orderId: response.id, receiptId: response.receipt, amount: response.amount, currency: response.currency, createdAt: response.created_at,
+				customerId: customerId, listingId: listingId, orderId: response.id, receiptId: response.receipt, amount: response.amount, currency: response.currency, createdAt: response.created_at,
 				status: response.status
 			}, (error, results) => {
 				if (error) {

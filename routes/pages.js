@@ -12,12 +12,12 @@ router.get('/about', (req, res) => {
   res.render('pages/about');
 });
 
-router.get('/donorlogin', (req, res) => {
-  res.render('donor/donorlogin');
+router.get('/customerlogin', (req, res) => {
+  res.render('customer/customerlogin');
 });
 
-router.get('/donorregister', (req, res) => {
-  res.render('donor/donorregister');
+router.get('/customerregister', (req, res) => {
+  res.render('customer/customerregister');
 });
 
 

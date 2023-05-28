@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `apnahostel`
+-- Database: `apna_hostels`
 --
 
 -- --------------------------------------------------------
@@ -44,8 +44,8 @@ CREATE TABLE `admins` (
 
 CREATE TABLE `donationdetails` (
   `number` int(11) NOT NULL AUTO_INCREMENT,
-  `donorId` varchar(255) NOT NULL,
-  `martyrId` varchar(255) NOT NULL,
+  `customerId` varchar(255) NOT NULL,
+  `listingId` varchar(255) NOT NULL,
   `orderId` varchar(255) NOT NULL,
   `receiptId` varchar(255) NOT NULL,
   `paymentId` varchar(255) NOT NULL,
@@ -62,10 +62,10 @@ CREATE TABLE `donationdetails` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donors`
+-- Table structure for table `customers`
 --
 
-CREATE TABLE `donors` (
+CREATE TABLE `customers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   `phone` varchar(100) NOT NULL,
@@ -80,16 +80,16 @@ CREATE TABLE `donors` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `martyrs`
+-- Table structure for table `listing`
 --
 
-CREATE TABLE `martyrs` (
+CREATE TABLE `listing` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
   `location` varchar(100) DEFAULT NULL,
   `price` varchar(100) DEFAULT NULL,
   `info` varchar(500) DEFAULT NULL,
-  `image` varchar(10000) DEFAULT NULL
+  `image` varchar(10000) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -112,15 +112,15 @@ CREATE TABLE `martyrs` (
 --   ADD PRIMARY KEY (`number`);
 
 -- --
--- -- Indexes for table `donors`
+-- -- Indexes for table `customers`
 -- --
--- ALTER TABLE `donors`
+-- ALTER TABLE `customers`
 --   ADD PRIMARY KEY (`id`);
 
 -- --
--- -- Indexes for table `martyrs`
+-- -- Indexes for table `listing`
 -- --
--- ALTER TABLE `martyrs`
+-- ALTER TABLE `listing`
 --   ADD PRIMARY KEY (`id`);
 
 --

@@ -28,13 +28,13 @@
           </div>
 
           <div class="form-group">
-            <label for="post">Post</label>
-            <input type="text" class="form-control" id="post" name="post" required value="<%=(typeof editData!='undefined')? editData.post:''%>">
+            <label for="post">Location</label>
+            <input type="text" class="form-control" id="location" name="location" required value="<%=(typeof editData!='undefined')? editData.location:''%>">
           </div>
 
           <div class="form-group">
-            <label for="force">Force</label>
-            <input type="text" class="form-control" id="force" name="force_name" required value="<%=(typeof editData!='undefined')? editData.force_name:''%>">
+            <label for="force">Price</label>
+            <input type="text" class="form-control" id="price" name="price" required value="<%=(typeof editData!='undefined')? editData.price:''%>">
           </div>
 
           <div class="form-group">
@@ -44,7 +44,7 @@
 
           <div class="form-group">
             <label for="bank">Image</label>
-            <input type="file" name="imageUpload" id="imageUpload" class="form-control" required value="<%=(typeof editData!='undefined')? editData.bank:''%>">
+            <input type="file" name="image" id="image" class="form-control" required value="<%=(typeof editData!='undefined')? editData.:''%>">
           </div>
           
           <button type="submit" class="btn btn-primary">Edit</button>
