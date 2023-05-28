@@ -46,15 +46,15 @@ With Apna Hostel, students can make informed decisions about their accommodation
 
 ## Preview
 
-![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview1.png)
-![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview2.png)
-![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview3.png)
-![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview4.png)
-![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview5.png)
-![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview6.png)
-![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview7.png)
-![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview8.png)
-![Preview](https://github.com/suyash-9/apnahostel/blob/main/public/preview/Preview9.png)
+![Preview1](public/preview/Preview1.png)
+![Preview2](public/preview/Preview2.png)
+![Preview3](public/preview/Preview1.png)
+![Preview4](public/preview/Preview1.png)
+![Preview5](public/preview/Preview1.png)
+![Preview6](public/preview/Preview1.png)
+![Preview7](public/preview/Preview1.png)
+![Preview8](public/preview/Preview1.png)
+![Preview9](public/preview/Preview1.png)
  
 ## Tools Used
 * Embedded JavaScript

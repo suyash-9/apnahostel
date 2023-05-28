@@ -82,7 +82,7 @@ exports.register = (req, res) => {
       } else {
         console.log(results);
         return res.render('customer/customerlogin', {
-          message: 'Donar registered'
+          message: 'Customer registered'
         });
       }
     })
