@@ -48,13 +48,13 @@ With Apna Hostel, students can make informed decisions about their accommodation
 
 ![Preview1](public/preview/Preview1.png)
 ![Preview2](public/preview/Preview2.png)
-![Preview3](public/preview/Preview1.png)
-![Preview4](public/preview/Preview1.png)
-![Preview5](public/preview/Preview1.png)
-![Preview6](public/preview/Preview1.png)
-![Preview7](public/preview/Preview1.png)
-![Preview8](public/preview/Preview1.png)
-![Preview9](public/preview/Preview1.png)
+![Preview3](public/preview/Preview3.png)
+![Preview4](public/preview/Preview4.png)
+![Preview5](public/preview/Preview5.png)
+![Preview6](public/preview/Preview6.png)
+![Preview7](public/preview/Preview7.png)
+![Preview8](public/preview/Preview8.png)
+![Preview9](public/preview/Preview9.png)
  
 ## Tools Used
 * Embedded JavaScript
